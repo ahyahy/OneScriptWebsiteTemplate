@@ -1,0 +1,87 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="ru">
+<head>
+    <title>Документация</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styleos.css">
+	<script defer src="mobil.js"></script>
+</head>
+<body>
+    <header>
+        <section>
+            <div>
+                <div id="logo"><big><big><big>Шаблон сайта <small><small> для библиотеки на C# <br>для сценарного языка</small></small> OneScript</big></big></big></div>
+            </div>
+            <div style="direction: rtl; overflow:hidden; padding: 8px 0px 0px 0px; margin-top:-7px;">
+                <div id=div22>
+                    <input type="checkbox" id="toggle">
+                    <label id="label1" class="hamburger-icon" onclick="label1click()"><div></div><div></div><div></div></label>
+                </div>
+                <nav>
+                    <a onclick="navclick(event)" href="index.html">Главная</a>
+                    <a onclick="navclick(event)" href="screenshot.html">Скриншоты</a>
+                    <a onclick="navclick(event)" href="howworks.html">Как это работает</a>
+                    <a onclick="navclick(event)" href="doc.html">Документация</a>
+                    <a onclick="navclick(event)" href="down.html">Скачать</a>
+                    <a onclick="navclick(event)" href="kont.html">Контакты</a>
+                    <input type="checkbox" id="toggle2">
+                    <a id="mobil" onclick="mobilClick()">`</a>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <div class="cont1">
+        <!-- Секция переключателя -->
+        <input type="checkbox" id="toggle1">
+        <!-- Блок для затемнения справки -->
+        <div class="divmodal"></div>
+        <!-- Сама справка -->
+        <div class="divleft" id="divleftid" onclick="divleftClick(event)">
+            <div id="expandcollapse">
+                <div id="expand" onclick="expand()">развернуть</div>
+                <div id="separator">&nbsp;|&nbsp;</div>
+                <div id="collapse" onclick="collapse()">свернуть</div>
+            </div>
+			<details>
+                <summary class="menu"><a href="OSWT/Intro.html" target="right">OSWT</a></summary>
+				<details>
+					<summary class="menu2"><a href="OSWT/Scripts.html" target="right">Сценарии</a></summary>
+					<p class="konstr"><a href="OSWT/OSWT.CreatClass.html" target="right">СозданиеКласса</a></p>
+					<p class="konstr"><a href="OSWT/OSWT.CreatMethod.html" target="right">СозданиеМетода</a></p>
+					<p class="konstr"><a href="OSWT/OSWT.CreatEnum.html" target="right">СозданиеПеречисления</a></p>
+					<p class="konstr"><a href="OSWT/OSWT.CreatProperty.html" target="right">СозданиеСвойства</a></p>
+					<p class="konstr"><a href="OSWT/OSWT.CreatEvent.html" target="right">СозданиеСобытия</a></p>
+					<p class="konstr"><a href="OSWT/OSWT.UnnecessaryHelpFiles.html" target="right">ЛишниеФайлыСправки</a></p>
+					<p class="konstr"><a href="OSWT/OSWT.ResortingTables.html" target="right">ПересортировкаТаблиц</a></p>
+					<p class="konstr"><a href="OSWT/OSWT.PagesWithoutCodes.html" target="right">СтраницыБезКодов</a></p>
+				</details>
+			</details>
+
+            <details>
+                <summary class="menu"><a href="OSWT/OSWTAppendix.html" target="right">Дополнения</a></summary>
+                <p class="konstr"><a href="OSWT/OSWTThisPrimer1.html" target="right">Дополнение1</a></p>
+                <p class="konstr"><a href="OSWT/OSWTThisPrimer2.html" target="right">Дополнение2</a></p>
+            </details>
+        </div>
+        <!-- Конец секции переключателя -->
+        <div id=nsbanner>
+            <div id=TitleRow>
+                <!-- Секция меню -->
+                <section class="menuFrame">
+                    <div id=div2 onclick="disableScroll()">
+                        <div id="menu1"></div>
+                        <label id="label2" for="toggle1" class="hamburger-icon1" onclick="label2click()"><div></div><div></div><div></div></label>
+                    </div>
+                    <div id=div3>
+                        <h1 class=dtH1 id="titlepage">Терминал-формы</h1>
+                    </div>
+                </section>
+                <!-- Конец секции меню -->
+            </div>
+        </div>
+        <div class="frameright">
+            <iframe name="right" id="iframeid" src="OSWT/Intro.html"></iframe>
+        </div>
+    </div>
+</body>
+</html>
